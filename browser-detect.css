@@ -1,0 +1,15 @@
+                for IE
+                _:-ms-lang(x),
+                .nw_AnyElementFromAgent.HTML {
+                    //Add any IE specific code
+                }
+                
+                for Firefox
+                .nw_AnyElementFromAgent.HTML {
+                    @-moz-document url-prefix() {
+                        //Add any FF specific code
+                    }
+                }
+                
+                for Chrome and Safari
+                Any thing that does not qualify for above two senarios
